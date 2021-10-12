@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Hook</title>
+    <meta name="keywords" content="Hook, containere, port, incaracari" />
+    <style type="text/css">
+        body
+        {
+            background: url("images/body-tail.jpg") repeat scroll 50% 0 transparent;
+            color: #393939;
+        }
+        #divMenu
+        {
+            background: url("images/main-bg-top.jpg") no-repeat scroll 50% 0 transparent;
+            height: 224px;
+        }
+        #menu
+        {
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 113px;
+        }
+        ul, ol
+        {
+            list-style: none outside none;
+        }
+        #menu li
+        {
+            background: url("images/menu-divider.gif") no-repeat scroll 0 17px transparent;
+            color: #FFFFFF;
+            float: left;
+            font-size: 1.5em;
+            margin: 0 0 0 -6px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divMenu">
+        <ul id="menu">
+            <li id="menuLi"><a href="#">Home</a></li>
+            <li id="Li1"><a href="#">Home2</a></li>
+            <li id="Li2"><a href="#">Home3</a></li>
+            <li id="Li3"><a href="#">Home4</a></li>
+            <li id="Li4"><a href="#">Home5</a></li>
+            <li id="Li5"><a href="#">Home6</a></li>
+        </ul>
+    </div>
+    <table width="900" cellspacing="1" cellpadding="0" border="0" bgcolor="#ffffff" style="color:White">
+        <tbody>
+            <tr>
+                <td valign="top" height="20" class="tableHead">
+                    &nbsp;
+                </td>
+                <td valign="top" height="20" align="middle" class="tableHead">
+                    &nbsp;
+                </td>
+                <td valign="top" height="20" align="middle" class="tableHead">
+                    &nbsp;
+                </td>
+                <td valign="top" height="20" align="middle" class="tableHead">
+                    &nbsp;
+                </td>
+                <td valign="top" height="20" align="middle" class="tableHead">
+                    &nbsp;
+                </td>
+                <td valign="top" height="20" align="middle" class="tableHead">
+                    &nbsp;
+                </td>
+                <td valign="top" height="20" align="middle" class="tableHead">
+                    &nbsp;
+                </td>
+                <td valign="top" height="20" align="middle" class="tableHead">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr bgcolor="#1c4694">
+                <td width="135" valign="top" height="75" bgcolor="#1c4694" class="tableHead">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TERM<br>
+                    <br>
+                    SERVICE
+                </td>
+                <td width="81" valign="top" height="75" bgcolor="#1c4694" align="middle" class="tableHead">
+                    EXW<br>
+                    Ex-Works
+                </td>
+                <td width="55" valign="top" height="75" align="middle" class="tableHead">
+                    FCA<br>
+                    Free Carrier
+                </td>
+                <td width="55" valign="top" height="75" align="middle" class="tableHead">
+                    FAS<br>
+                    Free Alongside Ship
+                </td>
+                <td width="55" valign="top" height="75" align="middle" class="tableHead">
+                    FOB<br>
+                    Free On-Board Vessel
+                </td>
+                <td width="55" valign="top" height="75" align="middle" class="tableHead">
+                    CFR<br>
+                    Cost &amp; Freight
+                </td>
+                <td width="55" valign="top" height="75" align="middle" class="tableHead">
+                    CIF<br>
+                    Cost Insurance &amp; Freight
+                </td>
+                <td width="81" valign="top" height="75" align="middle" class="tableHead">
+                    CPT
+                    <br>
+                    Carriage Paid to
+                </td>
+            </tr>
+            <tr valign="middle" bgcolor="#3f70b7" align="center">
+                <td width="123" height="14">
+                    &nbsp;
+                </td>
+                <td width="81" height="14" class="tablehead">
+                    WhoPays
+                </td>
+                <td width="81" height="14" class="tablehead">
+                    WhoPays
+                </td>
+                <td width="81" height="14" class="tablehead">
+                    WhoPays
+                </td>
+                <td width="81" height="14" class="tablehead">
+                    WhoPays
+                </td>
+                <td width="81" height="14" class="tablehead">
+                    WhoPays
+                </td>
+                <td width="81" height="14" class="tablehead">
+                    WhoPays
+                </td>
+                <td width="81" height="14" class="tablehead">
+                    WhoPays
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="28" bgcolor="#3f70b7" class="contactName">
+                    Warehouse storage at point of origin
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="28" bgcolor="#3f70b7" class="contactName">
+                    Warehouse labor at point of origin
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="14" bgcolor="#3f70b7" class="contactName">
+                    Export packing
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="14" bgcolor="#3f70b7" class="contactName">
+                    Loading at point of origin
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="14" bgcolor="#3f70b7" class="contactName">
+                    Inland freight
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="14" bgcolor="#3f70b7" class="contactName">
+                    Port receiving charges
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="14" bgcolor="#3f70b7" class="contactName">
+                    Forwarders fee
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="14" bgcolor="#3f70b7" class="contactName">
+                    Loading on ocean carrier
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="14" bgcolor="#3f70b7" class="contactName">
+                    Ocean/Air freight charges
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td width="81" height="14" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="28" bgcolor="#3f70b7" class="contactName">
+                    Charges at foreign Port/Airport
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="28" bgcolor="#3f70b7" class="contactName">
+                    Customs, Duties &amp; Taxes abroad
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="28" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+            </tr>
+            <tr>
+                <td width="123" valign="top" height="18" bgcolor="#3f70b7" class="contactName">
+                    Delivery charges to final destination
+                </td>
+                <td width="81" height="18" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="18" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="18" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="18" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="18" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="18" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td width="81" height="18" bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+    <table width="800" cellspacing="1" border="0" bgcolor="#ffffff">
+        <tbody>
+            <tr bgcolor="#1c4694">
+                <td width="110" valign="top" class="tableHead">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TERM<br>
+                    <br>
+                    SERVICE
+                </td>
+                <td width="81" valign="top" align="middle" class="tableHead">
+                    CIP
+                    <br>
+                    Carriage &amp; Insurance Paid To
+                </td>
+                <td width="81" valign="top" align="middle" class="tableHead">
+                    DAF<br>
+                    Delivery At Frontier
+                </td>
+                <td width="81" valign="top" align="middle" class="tableHead">
+                    DES<br>
+                    Delivered Ex-Ship
+                </td>
+                <td width="81" valign="top" align="middle" class="tableHead">
+                    DEQ<br>
+                    Delivered Ex-Quay, Duty Unpaid
+                </td>
+                <td width="81" valign="top" align="middle" class="tableHead">
+                    DDU<br>
+                    Delivered Duty Unpaid
+                </td>
+                <td width="81" valign="top" align="middle" td="" class="tableHead">
+                    DDP<br>
+                    Delivered Duty Paid
+                </td>
+            </tr>
+            <tr bgcolor="#3f70b7">
+                <td valign="top" height="1">
+                    &nbsp;
+                </td>
+                <td valign="top" height="1" align="middle" class="tableHead">
+                    WhoPays
+                </td>
+                <td valign="top" height="1" align="middle" class="tableHead">
+                    WhoPays
+                </td>
+                <td valign="top" height="1" align="middle" class="tableHead">
+                    WhoPays
+                </td>
+                <td valign="top" height="1" align="middle" class="tableHead">
+                    WhoPays
+                </td>
+                <td valign="top" height="1" align="middle" class="tableHead">
+                    WhoPays
+                </td>
+                <td valign="top" height="1" align="middle" class="tableHead">
+                    WhoPays
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Warehouse storage at point of origin
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Warehouse labor at point of origin
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Export packing
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Loading at point of origin
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Inland freight
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Port receiving charges
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Forwarders fee
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Loading on ocean carrier
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Ocean/Air freight charges
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Charges at foreign Port/Airport
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Customs, Duties &amp; Taxes abroad
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#3f70b7" class="contactName">
+                    Delivery charges to final destination
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#cccccc" align="middle" class="contactINFO">
+                    Buyer
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+                <td bgcolor="#ffffff" align="middle" class="contactINFO">
+                    Seller
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+scos prima pagina - default engleza
+meniu - adaugat 3 pagini
+
+
+
+
+
+Domain name:             hook-transport.ro
+Hosting server:          host01.intersat-telecom.ro
+Administration login:    hook-transport.ro
+Administrator password:  f5RVXOd38Jk6
+ 
+FTP server:              host01.intersat-telecom.ro
+ 
+Administration URL:      https://hook-transport.ro:10000/
+ 
+Website:                 http://www.hook-transport.ro/
+Webalizer log reporting: Disabled
+ 
+MySQL database:          hook_transport_ro
+MySQL login:             hook-transport.r
+MySQL password:          f5RVXOd38Jk6
+phpMyAdmin:              http://phpmyadmin.host01.intersat-telecom.ro
+ 
+Please don't forget to register the correct DNS servers:
+- ns1.intersat-telecom.ro
+- ns2.intersat-telecom.ro
